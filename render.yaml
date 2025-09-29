@@ -1,0 +1,8 @@
+# render.yaml
+services:
+  - type: web
+    name: crop-yield-prediction-app
+    env: python
+    pythonVersion: "3.11"    
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
